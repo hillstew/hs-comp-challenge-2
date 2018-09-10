@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+
+}
+
+header {
+  align-items: flex-end;
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  height: 45px;
+  width: 45px;
+}
+.nav-section {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 15px 15px 25px;
+}
+
+.card-container {
+  align-items: center;
+  background-color: #efefef;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat( auto-fill, minmax(275px, 1fr));
+  margin: ;
+}
+
+article {
+  border: 1px solid red;
+  background-color: #FFFFFF;
+  height: 425px;
+  width: 275px;
+}
+article section {}
+.card1, 
+.card2, 
+.card3, 
+.card4 {
+}
+.card5,
+.card6,
+.card7,
+.card8 {
+}
+.card-image-section {
+  background-color: black;
+  background-image: center;
+  background-position: center;
+  display: flex;
+  height: 135px;
+  justify-content: space-between;
+  /*opacity: .9;*/
+  width: 275px;
+
+}
+.overlay {
+
+}
+
+.image-icon {
+  color: #FFFFFF;
+  font-size: 55px;
+}
+.image-count {
+  font-size: 30px;
+  margin: 0 auto;
+}
+ .image-text {
+  margin: 0 auto;
+ }
+ .recipeint-text {
+  font-size: .75rem;
+  margin: 0;
+ }
+ .link-box {
+  background-color: #efefef; 
+  height: 55px;
+  width: 250px;
+  margin: 0 auto;
+ }
+
+
+.icon-text {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.admin-header, .logo-header {
+  color: #26b4fd;
+  display: flex;
+  align-items: baseline;
+  margin: 0 15px;
+  align-items: right;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Chivo', sans-serif;
+  font-size: 40px;
+  font-style: 900;
+  margin: 0;
+}
+
+
+.image1 {
+  background-image: url(images/headshot1.jpeg);
+}
+.image2 {
+  background-image: url(images/headshot2.jpeg);
+}
+.image3 {
+  background-image: url(images/headshot3.jpeg);
+}
+.image4 {
+  background-image: url(images/headshot4.jpeg);
+}
+.image5 {
+  background-image: url(images/headshot5.jpeg);
+}
+.image6 {
+  background-image: url(images/headshot6.jpeg);
+}
+.image7 {
+  background-image: url(images/headshot7.jpeg);
+}
+.image8 {
+  background-image: url(images/headshot8.jpeg);
+}
+
