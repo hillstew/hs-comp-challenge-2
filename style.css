@@ -59,8 +59,9 @@ header {
 .logo-text {
   color: #FFFFFF;
   font-family: 'Chivo', sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   font-style: 900;
+  margin: 0;
 }
 
 .fa-chevron-circle-down {
@@ -202,7 +203,6 @@ article {
 
 .shares-text {
   color: #FFFFFF;
-  /*display: inline-block;*/
   margin: 0 4%;
 }
 
