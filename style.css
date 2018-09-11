@@ -1,137 +1,307 @@
 body {
-  padding: 0;
+  background-color: #efefef;
   font-family: 'Overpass', sans-serif;
-
+  padding: 0;
 }
 
 header {
-  align-items: flex-end;
   background-color: #2b2b2b;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+          "admin admin"
+          "nav nav";
+}
+
+.nav-section {
   display: flex;
-  flex-direction: row;
+  grid-area: nav;
+  margin: 0 0 20px 20px;
+}
+
+.nav-divs {
+  align-items: flex-end;
+  display: flex;
+  height: 20px;
+  justify-content: baseline;
+  justify-content: flex-start;
   justify-content: space-between;
 }
 
-img {
-  height: 45px;
-  width: 45px;
+.short-divs {
+  width: 130px;
 }
-.nav-section {
-  align-items: baseline;
+
+.long-div {
+  width: 200px;
+}
+
+.logo-header {
+  align-items: center;
+  align-items: right;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 15px 15px 25px;
+  grid-area: nav;
+  justify-content: flex-end;
+  margin: 0 20px;
+  height: 70px;
+}
+
+.trophy {
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.logo-text {
+  color: #FFFFFF;
+  font-family: 'Chivo', sans-serif;
+  font-size: 2em;
+  font-style: 900;
+}
+
+.fa-chevron-circle-down {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.person-icon {
+  color: #b8b8b8;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.fa-share-alt {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.admin-header {
+  align-items: center;
+  color: #26b4fd;
+  display: flex;
+  grid-area: admin;
+  justify-content: flex-end;
+  margin: 0 20px;
+}
+
+.card-container-header {
+  align-content: center;
+  background-color: #efefef;
+  display: grid;
+  height: 80px;
+}
+
+.shares-text-header {
+  font-size: 2.5em;
+  margin: 0 20px;
 }
 
 .card-container {
   align-items: center;
   background-color: #efefef;
   display: grid;
-  height: 100vh;
-  grid-template-columns: repeat( auto-fill, minmax(275px, 1fr));
-  margin: ;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 20px;
 }
 
 article {
-  border: 1px solid red;
   background-color: #FFFFFF;
   height: 425px;
-  width: 275px;
 }
-article section {}
+
 .card1, 
 .card2, 
 .card3, 
 .card4 {
 }
+
 .card5,
 .card6,
 .card7,
 .card8 {
 }
+
 .card-image-section {
-  background-color: black;
-  background-image: center;
-  background-position: center;
   display: flex;
-  height: 135px;
+  height: 155px;
   justify-content: space-between;
-  /*opacity: .9;*/
-  width: 275px;
-
-}
-.overlay {
-
+  
 }
 
 .image-icon {
   color: #FFFFFF;
   font-size: 55px;
+  margin: 10px;
+}
+
+.views-text {
+  margin: 13px;
+
 }
 .image-count {
+  color: #FFFFFF;
   font-size: 30px;
   margin: 0 auto;
+  text-align: center;
 }
- .image-text {
-  margin: 0 auto;
- }
- .recipeint-text {
-  font-size: .75rem;
-  margin: 0;
- }
- .link-box {
-  background-color: #efefef; 
-  height: 55px;
-  width: 250px;
-  margin: 0 auto;
- }
 
+.image-text {
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.recipeint-header {
+  margin-bottom: 2%;
+}
+
+.recipeint-text {
+  color: #bfc1c3;
+  font-size: .8rem;
+  margin: 0;
+}
+
+.card-info {
+  height: 55px;
+  margin: 0 5%;
+}
+
+.playlist-box {
+  height: 55px;
+  margin: 0 5%;
+}
+
+.attachments-box {
+  height: 55px;
+  margin: 0 5%;
+  }
+
+.link-box {
+  align-content: center;
+  background-color: #efefef; 
+  display: flex;
+  height: 55px;
+  margin: 0 5%;
+}
 
 .icon-text {
+  color: #7a7a7a;
+  margin: 0 2%;  
+}
+
+.blue-nav {
+  color: #28b4fc;
+  font-size: 20px;
+}
+
+.shares-text {
+  color: #FFFFFF;
   display: inline-block;
-  margin-left: 15px;
+  margin: 0 2%;
 }
 
-.admin-header, .logo-header {
-  color: #26b4fd;
-  display: flex;
-  align-items: baseline;
-  margin: 0 15px;
-  align-items: right;
+.playlist-header {
+  font-size: .8em;
+  margin-bottom: 0;
 }
 
-h1 {
-  color: #ffffff;
-  font-family: 'Chivo', sans-serif;
-  font-size: 40px;
-  font-style: 900;
+.playlist-text {
+  margin-top: 5px;
+}
+
+.attachments-header {
   margin: 0;
 }
 
+.attachments-text {
+  color: #28b4fc;
+  font-size: 2em;
+  margin: 0;
+}
 
 .image1 {
-  background-image: url(images/headshot1.jpeg);
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+    url(images/headshot1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image2 {
-  background-image: url(images/headshot2.jpeg);
-}
-.image3 {
-  background-image: url(images/headshot3.jpeg);
-}
-.image4 {
-  background-image: url(images/headshot4.jpeg);
-}
-.image5 {
-  background-image: url(images/headshot5.jpeg);
-}
-.image6 {
-  background-image: url(images/headshot6.jpeg);
-}
-.image7 {
-  background-image: url(images/headshot7.jpeg);
-}
-.image8 {
-  background-image: url(images/headshot8.jpeg);
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+      url(images/headshot2.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
 
+.image3 {
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+      url(images/headshot3.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.image4 {
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+      url(images/headshot4.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.image5 {
+ background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+      url(images/headshot5.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.image6 {
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+      url(images/headshot6.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.image7 {
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)),
+      url(images/headshot7.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.image8 {
+  background:
+    linear-gradient(
+      rgba(56, 56, 56, .4),
+      rgba(56, 56, 56, .4)), 
+      url(images/headshot8.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
