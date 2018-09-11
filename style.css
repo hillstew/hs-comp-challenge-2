@@ -26,11 +26,14 @@ header {
   height: 20px;
   justify-content: baseline;
   justify-content: flex-start;
-  justify-content: space-between;
 }
 
 .short-divs {
   width: 130px;
+}
+
+.shorter-div {
+  width: 110px;
 }
 
 .long-div {
@@ -46,6 +49,7 @@ header {
   margin: 0 20px;
   height: 70px;
 }
+
 
 .trophy {
   color: #FFFFFF;
@@ -73,6 +77,7 @@ header {
 .fa-share-alt {
   color: #FFFFFF;
   font-size: 20px;
+  margin: 0 3%;
 }
 
 .admin-header {
@@ -186,19 +191,21 @@ article {
 
 .icon-text {
   color: #7a7a7a;
-  margin: 0 2%;  
+  margin: 0 4%;  
 }
 
 .blue-nav {
   color: #28b4fc;
   font-size: 20px;
+  margin: 0 2%;
 }
 
 .shares-text {
   color: #FFFFFF;
-  display: inline-block;
-  margin: 0 2%;
+  /*display: inline-block;*/
+  margin: 0 4%;
 }
+
 
 .playlist-header {
   font-size: .8em;
@@ -219,13 +226,17 @@ article {
   margin: 0;
 }
 
+.personal-vid {
+  margin-left: 3%;
+}
+
 .image1 {
   background:
     linear-gradient(
       rgba(56, 56, 56, .4),
       rgba(56, 56, 56, .4)),
-    url(images/headshot1.jpeg);
-  background-position: center;
+    url(images/headshot1.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -242,6 +253,7 @@ article {
 
 .image3 {
   background:
+
     linear-gradient(
       rgba(56, 56, 56, .4),
       rgba(56, 56, 56, .4)),
@@ -304,4 +316,25 @@ article {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+          "nav admin"
+          "nav admin";
+}
+  .nav-section {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-divs {
+    margin-top: 3%;
+  }
+  .all-nav-text {
+    vertical-align: left;
+  }
 }
